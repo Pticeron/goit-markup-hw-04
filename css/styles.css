@@ -48,7 +48,7 @@ body {
 }
 
 .link {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 h1,
@@ -164,11 +164,26 @@ a.link.current {
 
 /* Hero  */
 .hero {
-
   background-color: var(--hero-bcg);
   text-align: center;
+  /* margin-left: 0;
+  margin-right: 0; */
+}
+
+.owerlay {
+  max-width: 1600px;
+  height: 600px;
+  margin: 0 auto;
   padding-top: 200px;
   padding-bottom: 200px;
+  background-image: linear-gradient(
+    to right,
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)),
+    url(../images/bcg.img.jpg); 
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 .title-hero {
