@@ -169,7 +169,6 @@ a.link.current {
 .tel-icon {
   width: 10px;
   height: 16px;
-  color: currentColor;
 }
 /* .mailo-icon,
 .tel-icon:hover {
@@ -335,7 +334,7 @@ a.link.current {
 }
 
 .add-full {
- margin-top: 20px;
+  margin-top: 20px;
 }
 
 .footer-adr {
@@ -386,6 +385,7 @@ a.link.current {
 .button-card:focus {
   color: var(--second-akcent-color);
   background-color: var(--akcent-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button {
@@ -412,6 +412,9 @@ a.link.current {
   flex-basis: calc(100% / 3 - 30px);
   margin-left: 30px;
   margin-top: 30px;
+}
+.boxes-top:hover {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .boxes-title {
