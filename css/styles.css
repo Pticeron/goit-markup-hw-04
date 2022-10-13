@@ -162,6 +162,20 @@ a.link.current {
   color: var(--akcent-color);
 }
 
+.mailo-icon {
+  width: 16px;
+  height: 12px;
+}
+.tel-icon {
+  width: 10px;
+  height: 16px;
+  color: currentColor;
+}
+/* .mailo-icon,
+.tel-icon:hover {
+  color: var(--akcent-color)
+} */
+
 /* Hero  */
 .hero {
   background-color: var(--hero-bcg);
