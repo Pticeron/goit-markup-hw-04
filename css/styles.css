@@ -328,6 +328,34 @@ a.link.current {
   color: var(--second-text-color);
 }
 
+.icon-link-team {
+  display: flex;
+  justify-content: center;
+  margin-top: 16px;
+}
+
+.icon-link-team > .link-icon:not(:last-child) {
+  margin-right: 10px;
+}
+
+.link-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+}
+.link-icon:hover {
+  background-color: var(--akcent-color);
+  fill: #ffffff;
+}
+.icon-team {
+  width: 20px;
+  height: 20px;
+  
+}
+
 .footer-info {
   background-color: var(--hero-bcg);
   padding-top: 60px;
