@@ -122,6 +122,7 @@ img {
 .site-contacts {
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .site-nav .link {
@@ -165,15 +166,18 @@ a.link.current {
 .mailo-icon {
   width: 16px;
   height: 12px;
+  fill: var(--second-text-color);
 }
+
 .tel-icon {
   width: 10px;
   height: 16px;
+  fill: var(--second-text-color);
 }
-/* .mailo-icon,
+.mailo-icon:hover,
 .tel-icon:hover {
-  color: var(--akcent-color)
-} */
+  fill: var(--akcent-color);
+}
 
 /* Hero  */
 .hero {
@@ -231,13 +235,31 @@ a.link.current {
 
 .benefits-item {
   display: flex;
+
+}
+.icon-item {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+
+  
+  width: 270px;
+  height: 120px;
+  margin: 0;
+  background-color: var(--second-backgraund-color);
+  border-radius: 4px;
 }
 
+.item-picture {
+  width: 70px;
+  height: 70px;
+}
 .benefits-item .item + .item {
   margin-left: 30px;
 }
 
 .title-three {
+  margin-top: 30px;
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
