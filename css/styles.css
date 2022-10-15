@@ -166,7 +166,7 @@ a.link.current {
 .mailo-icon {
   width: 16px;
   height: 12px;
-  fill: var(--icon-color);
+  fill: var(--second-text-color);
 }
 
 .tel-icon {
@@ -174,9 +174,10 @@ a.link.current {
   height: 16px;
   fill: var(--second-text-color);
 }
+
 .mailo-icon:hover,
 .tel-icon:hover {
-  fill: var(--second-text-color);
+  fill: var(--akcent-color);
 }
 
 /* Hero  */
