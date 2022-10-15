@@ -23,14 +23,13 @@
   --second-akcent-color: #ffffff;
   --card-bcg: #eeeeee;
   --logo-color: #000000;
-  --icon-color: #AFB1B8;
+  --icon-color: #afb1b8;
   /* font */
   --one-font-family: "Roboto", sans-serif;
   --logo-font-style: "Raleway", sans-serif;
   /* shadow */
   --card-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
-    0px 1px 1px rgba(0, 0, 0, 0.14),
-    0px 2px 1px rgba(0, 0, 0, 0.2);
+    0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 body {
@@ -86,7 +85,7 @@ img {
 
 /* HEADER */
 .header-site {
-  border-bottom: 1px solid #ECECEC;
+  border-bottom: 1px solid #ececec;
 }
 
 .nav-header {
@@ -167,7 +166,7 @@ a.link.current {
 .mailo-icon {
   width: 16px;
   height: 12px;
-  fill: var(--second-text-color);
+  fill: var(--icon-color);
 }
 
 .tel-icon {
@@ -177,15 +176,13 @@ a.link.current {
 }
 .mailo-icon:hover,
 .tel-icon:hover {
-  fill: var(--akcent-color);
+  fill: var(--second-text-color);
 }
 
 /* Hero  */
 .hero {
   background-color: var(--hero-bcg);
   text-align: center;
-  /* margin-left: 0;
-  margin-right: 0; */
 }
 
 .owerlay {
@@ -195,10 +192,11 @@ a.link.current {
   padding-top: 200px;
   padding-bottom: 200px;
   background-image: linear-gradient(
-    to right,
-    rgba(47, 48, 58, 0.4),
-    rgba(47, 48, 58, 0.4)),
-    url(../images/bcg.img.jpg); 
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url(../images/bcg.img.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -236,14 +234,12 @@ a.link.current {
 
 .benefits-item {
   display: flex;
-
 }
 .icon-item {
   display: inline-flex;
   justify-content: center;
   align-items: center;
 
-  
   width: 270px;
   height: 120px;
   margin: 0;
@@ -330,12 +326,15 @@ a.link.current {
 }
 
 .icon-link-team {
-  display: flex;
-  justify-content: center;
+  display: block;
   margin-top: 16px;
 }
+.social-team {
+  display: flex;
+  justify-content: center;
+}
 
-.icon-link-team > .link-icon:not(:last-child) {
+.social-team > .icon-social:not(:last-child) {
   margin-right: 10px;
 }
 
@@ -347,14 +346,11 @@ a.link.current {
   height: 44px;
   border-radius: 50%;
 }
-.link-icon:hover {
-  background-color: var(--akcent-color);
-}
+
 .icon-team {
   width: 20px;
   height: 20px;
-  fill: var(--icon-color)
-  
+  fill: var(--icon-color);
 }
 .icon-team:hover {
   fill: var(--second-akcent-color);
@@ -366,19 +362,19 @@ a.link.current {
 .compani-item > .item-icon:not(:last-child) {
   margin-right: 30px;
 }
-  
 
 .item-icon {
   display: block;
   padding: 16.17px 32px;
-  border: 1px solid #AFB1B8;
+  border: 1px solid #afb1b8;
   border-radius: 4px;
 }
-.item-icon:hover{
+.item-icon:hover {
   border-color: var(--akcent-color);
 }
+
 .compani:hover {
-  fill: var(--akcent-color)
+  fill: var(--akcent-color);
 }
 
 .icon-compani {
@@ -388,13 +384,20 @@ a.link.current {
 .compani {
   width: 106px;
   height: 60.65px;
-  fill: var(--icon-color)
+  fill: var(--icon-color);
 }
+
+/* Footer */
 
 .footer-info {
   background-color: var(--hero-bcg);
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.main-footer {
+  display: flex;
+  align-items: baseline;
 }
 
 .footer-contakt {
@@ -403,7 +406,7 @@ a.link.current {
 
 .footer-contakt > .item:not(:last-child) {
   margin-bottom: 9px;
-}  
+}
 
 .logo-footer {
   font-family: var(--logo-font-style);
@@ -448,6 +451,41 @@ a.link.current {
   color: var(--akcent-color);
 }
 
+.footer-social {
+  margin-left: 70px;
+}
+.footer-style {
+  display: flex;
+}
+.link-social:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer-title {
+  display: inline-flex;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.142;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--second-akcent-color);
+  margin-bottom: 20px;
+}
+
+.link-social > .link-icon {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.link-icon:hover {
+  background-color: var(--akcent-color);
+}
+
+.icon-footer {
+  width: 20px;
+  height: 20px;
+  fill: var(--second-akcent-color);
+}
+
 /* Сторінка 2 */
 .button-card {
   text-align: center;
@@ -470,18 +508,19 @@ a.link.current {
 .button-card:focus {
   color: var(--second-akcent-color);
   background-color: var(--akcent-color);
-  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .button {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-  }
+}
 
-  .button > .item:not(:last-child) {
-    margin-right: 8px;
-  }
+.button > .item:not(:last-child) {
+  margin-right: 8px;
+}
 
 .boxes {
   display: flex;
@@ -499,7 +538,8 @@ a.link.current {
   margin-top: 30px;
 }
 .boxes-top:hover {
-  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .boxes-title {
@@ -521,5 +561,5 @@ a.link.current {
 
 .card-content {
   padding: 20px 24px;
-  border: 1px solid #EEEEEE;
+  border: 1px solid #eeeeee;
 }
