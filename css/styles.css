@@ -23,6 +23,7 @@
   --second-akcent-color: #ffffff;
   --card-bcg: #eeeeee;
   --logo-color: #000000;
+  --icon-color: #AFB1B8;
   /* font */
   --one-font-family: "Roboto", sans-serif;
   --logo-font-style: "Raleway", sans-serif;
@@ -348,12 +349,46 @@ a.link.current {
 }
 .link-icon:hover {
   background-color: var(--akcent-color);
-  fill: #ffffff;
 }
 .icon-team {
   width: 20px;
   height: 20px;
+  fill: var(--icon-color)
   
+}
+.icon-team:hover {
+  fill: var(--second-akcent-color);
+}
+
+.compani-item {
+  display: flex;
+}
+.compani-item > .item-icon:not(:last-child) {
+  margin-right: 30px;
+}
+  
+
+.item-icon {
+  display: block;
+  padding: 16.17px 32px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+.item-icon:hover{
+  border-color: var(--akcent-color);
+}
+.compani:hover {
+  fill: var(--akcent-color)
+}
+
+.icon-compani {
+  width: 170px;
+  height: 93px;
+}
+.compani {
+  width: 106px;
+  height: 60.65px;
+  fill: var(--icon-color)
 }
 
 .footer-info {
