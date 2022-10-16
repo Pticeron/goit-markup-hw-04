@@ -164,20 +164,22 @@ a.link.current {
 }
 
 .mailo-icon {
+  margin-right: 10px;
   width: 16px;
   height: 12px;
-  fill: var(--second-text-color);
+  fill: currentColor;
 }
 
 .tel-icon {
+  margin-right: 10px;
   width: 10px;
   height: 16px;
-  fill: var(--second-text-color);
+  fill: currentColor;
 }
 
-.mailo-icon:hover,
-.tel-icon:hover {
-  fill: var(--akcent-color);
+.contact-item-icon {
+  display: flex;
+  align-items: center;
 }
 
 /* Hero  */
@@ -326,12 +328,10 @@ a.link.current {
   color: var(--second-text-color);
 }
 
-.icon-link-team {
-  display: block;
-  margin-top: 16px;
-}
+
 .social-team {
   display: flex;
+  margin-top: 16px;
   justify-content: center;
 }
 
@@ -346,15 +346,19 @@ a.link.current {
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  color: var(--icon-color);
+}
+
+.link-icon:hover,
+.link-icon:focus {
+  background-color: var(--akcent-color);
+  color: var(--one-backgraund-color);
 }
 
 .icon-team {
   width: 20px;
   height: 20px;
-  fill: var(--icon-color);
-}
-.icon-team:hover {
-  fill: var(--second-akcent-color);
+  fill: currentColor;
 }
 
 .compani-item {
@@ -364,28 +368,28 @@ a.link.current {
   margin-right: 30px;
 }
 
-.item-icon {
-  display: block;
-  padding: 16.17px 32px;
+
+.icon-compani {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 93px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
+  color: var(--icon-color)
 }
-.item-icon:hover {
+
+.icon-compani:hover,
+.icon-compani:focus {
+  color: var(--akcent-color);
   border-color: var(--akcent-color);
 }
 
-.compani:hover {
-  fill: var(--akcent-color);
-}
-
-.icon-compani {
-  width: 170px;
-  height: 93px;
-}
 .compani {
   width: 106px;
-  height: 60.65px;
-  fill: var(--icon-color);
+  height: 60px;
+  fill: currentColor;
 }
 
 /* Footer */
@@ -474,17 +478,19 @@ a.link.current {
 }
 
 .link-social > .link-icon {
+  color: var(--one-backgraund-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.link-icon:hover {
+.link-icon:hover,
+.link-icon:focus {
   background-color: var(--akcent-color);
 }
 
 .icon-footer {
   width: 20px;
   height: 20px;
-  fill: var(--second-akcent-color);
+  fill: currentColor;
 }
 
 /* Сторінка 2 */
@@ -538,9 +544,14 @@ a.link.current {
   margin-left: 30px;
   margin-top: 30px;
 }
-.boxes-top:hover {
+.boxes-card:hover,
+.boxes-card:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+.boxes-card {
+  display: block;
 }
 
 .boxes-title {

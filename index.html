@@ -39,18 +39,18 @@
         </nav>
         <ul class="site-contacts list">
           <li class="item">
-            <svg class="mailo-icon">
+              <a class="contact-item-icon link" href="mailto:info@devstudio.com"> 
+              <svg class="mailo-icon">
               <use href="./images/symbol-defs.svg#icon-envelope"></use>
-            </svg>
-            <a class="link" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
-            >
+            </svg> 
+                info@devstudio.com</a>
           </li>
           <li class="item">
-            <svg class="tel-icon">
-              <use href="./images/symbol-defs.svg#icon-smartphone"></use>
-            </svg>
-            <a class="link" href="tel:+380961111111">+38 096 111 11 11</a>
+              <a class="contact-item-icon link" href="tel:+380961111111">
+              <svg class="tel-icon">
+                <use href="./images/symbol-defs.svg#icon-smartphone"></use>
+              </svg>
+              +38 096 111 11 11</a>
           </li>
         </ul>
       </div>
@@ -58,8 +58,8 @@
     <!-- MAIN -->
     <main>
       <!--Hiro-->
-      <section class="hero">
-        <div class="owerlay">
+      <section class="hero owerlay">
+        <div class="container">
           <h1 class="title-hero">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button-hero">Замовити послугу</button>
         </div>
@@ -84,7 +84,7 @@
             <li class="item">
               <div class="icon-item">
                 <svg class="item-picture">
-                  <use href="./images/symbol-defs.svg#icon-Vector"></use>
+                  <use href="./images/symbol-defs.svg#icon-clock"></use>
                 </svg>
               </div>
               <h3 class="title-three">ПУНКТУАЛЬНІСТЬ</h3>
@@ -155,10 +155,9 @@
                 <p lang="en" class="team-text">Product Designer</p>
 
                 <!-- I C O N-Social -->
-                <div class="icon-link-team">
                   <ul class="social-team list">
                     <li class="icon-social">
-                      <a class="link-icon">
+                      <a href="#" class="link-icon">
                         <svg class="icon-team">
                           <use
                             href="./images/symbol-defs.svg#icon-instagram-2"
@@ -167,7 +166,7 @@
                       </a>
                     </li>
                     <li class="icon-social">
-                      <a class="link-icon">
+                      <a href="#" class="link-icon">
                         <svg class="icon-team">
                           <use
                             href="./images/symbol-defs.svg#icon-twitter-1"
@@ -176,7 +175,7 @@
                       </a>
                     </li>
                     <li class="icon-social">
-                      <a class="link-icon">
+                      <a href="#" class="link-icon">
                         <svg class="icon-team">
                           <use
                             href="./images/symbol-defs.svg#icon-facebook-1"
@@ -185,7 +184,7 @@
                       </a>
                     </li>
                     <li class="icon-social">
-                      <a class="link-icon">
+                      <a href="#" class="link-icon">
                         <svg class="icon-team">
                           <use
                             href="./images/symbol-defs.svg#icon-linkedin-1"
@@ -195,7 +194,6 @@
                     </li>
                   </ul>
                 </div>
-              </div>
             </li>
 
             <li class="team-card">
@@ -207,46 +205,36 @@
                 <h3 class="title-name">Ольга Рєпіна</h3>
                 <p lang="en" class="team-text">Frontend Developer</p>
                 <!-- I C O N-Social -->
-                <div class="icon-link-team">
-                  <ul class="social-team list">
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-instagram-2"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-twitter-1"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-facebook-1"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-linkedin-1"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="social-team list">
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -264,46 +252,36 @@
                 <p lang="en" class="team-text">Marketing</p>
 
                 <!-- I C O N-Social -->
-                <div class="icon-link-team">
-                  <ul class="social-team list">
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-instagram-2"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-twitter-1"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-facebook-1"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-linkedin-1"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="social-team list">
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
 
@@ -321,46 +299,36 @@
                 <p lang="en" class="team-text">UI Designer</p>
 
                 <!-- I C O N-Social -->
-                <div class="icon-link-team">
-                  <ul class="social-team list">
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-instagram-2"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-twitter-1"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-facebook-1"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                    <li class="icon-social">
-                      <a class="link-icon">
-                        <svg class="icon-team">
-                          <use
-                            href="./images/symbol-defs.svg#icon-linkedin-1"
-                          ></use>
-                        </svg>
-                      </a>
-                    </li>
-                  </ul>
-                </div>
+                <ul class="social-team list">
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-social">
+                    <a href="#" class="link-icon">
+                      <svg class="icon-team">
+                        <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
               </div>
             </li>
           </ul>
@@ -372,42 +340,42 @@
         <div class="container">
           <ul class="compani-item list">
             <li class="item-icon">
-              <a class="icon-compani">
+              <a href="#" class="icon-compani">
                 <svg class="compani">
                   <use href="./images/symbol-defs.svg#icon-company-1"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon">
-              <a class="icon-compani">
+              <a href="#" class="icon-compani">
                 <svg class="compani">
                   <use href="./images/symbol-defs.svg#icon-company-2"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon">
-              <a class="icon-compani">
+              <a href="#" class="icon-compani">
                 <svg class="compani">
                   <use href="./images/symbol-defs.svg#icon-company-3"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon">
-              <a class="icon-compani">
+              <a href="#" class="icon-compani">
                 <svg class="compani">
                   <use href="./images/symbol-defs.svg#icon-company-4"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon">
-              <a class="icon-compani">
+              <a href="#" class="icon-compani">
                 <svg class="compani">
                   <use href="./images/symbol-defs.svg#icon-company-5"></use>
                 </svg>
               </a>
             </li>
             <li class="item-icon">
-              <a class="icon-compani">
+              <a href="#" class="icon-compani">
                 <svg class="compani">
                   <use href="./images/symbol-defs.svg#icon-company-6"></use>
                 </svg>
@@ -458,31 +426,31 @@
         </div>
         <!-- Icon social -->
         <div class="footer-social">
-          <h3 class="footer-title">приєднуйтесь</h3>
+          <p class="footer-title">приєднуйтесь</p>
           <ul class="footer-style list">
             <li class="link-social">
-              <a class="link-icon">
+              <a href="#" class="link-icon">
                 <svg class="icon-footer">
                   <use href="./images/symbol-defs.svg#icon-instagram-2"></use>
                 </svg>
               </a>
             </li>
             <li class="link-social">
-              <a class="link-icon">
+              <a href="#" class="link-icon">
                 <svg class="icon-footer">
                   <use href="./images/symbol-defs.svg#icon-twitter-1"></use>
                 </svg>
               </a>
             </li>
             <li class="link-social">
-              <a class="link-icon">
+              <a href="#" class="link-icon">
                 <svg class="icon-footer">
                   <use href="./images/symbol-defs.svg#icon-facebook-1"></use>
                 </svg>
               </a>
             </li>
             <li class="link-social">
-              <a class="link-icon">
+              <a href="#"class="link-icon">
                 <svg class="icon-footer">
                   <use href="./images/symbol-defs.svg#icon-linkedin-1"></use>
                 </svg>
