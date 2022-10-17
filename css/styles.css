@@ -93,7 +93,7 @@ img {
   align-items: center;
 }
 
-.container.mine-nav {
+.mine-nav {
   display: flex;
   align-items: center;
 }
@@ -302,6 +302,7 @@ a.link.current {
 .team-item {
   display: flex;
 }
+
 .team-item > .team-card:not(:last-child) {
   margin-right: 30px;
 }
@@ -327,7 +328,6 @@ a.link.current {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
 }
-
 
 .social-team {
   display: flex;
@@ -368,16 +368,15 @@ a.link.current {
   margin-right: 30px;
 }
 
-
 .icon-compani {
   display: flex;
   align-items: center;
   justify-content: center;
   width: 170px;
-  height: 93px;
+  height: 92px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  color: var(--icon-color)
+  color: var(--icon-color);
 }
 
 .icon-compani:hover,
@@ -467,7 +466,6 @@ a.link.current {
 }
 
 .footer-title {
-  display: inline-flex;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.142;
@@ -477,14 +475,19 @@ a.link.current {
   margin-bottom: 20px;
 }
 
-.link-social > .link-icon {
+.link-social > .link-icon-footer {
   color: var(--one-backgraund-color);
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-.link-icon:hover,
-.link-icon:focus {
-  background-color: var(--akcent-color);
+.link-icon-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--icon-color);
 }
 
 .icon-footer {
@@ -492,6 +495,12 @@ a.link.current {
   height: 20px;
   fill: currentColor;
 }
+
+.link-icon-footer:hover,
+.link-icon-footer:focus {
+  background-color: var(--akcent-color);
+}
+
 
 /* Сторінка 2 */
 .button-card {
